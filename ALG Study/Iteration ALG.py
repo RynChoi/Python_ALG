@@ -135,3 +135,55 @@
 #     print('+', end='') #n이 홀수일 때만 +를 출력
 
 # print()
+
+
+
+# # *를 n개 출력하되 w개마다 줄바꿈하기 1
+
+# print('*를 출력합니다.')
+# n = int(input('몇 개를 출력할까요> '))
+# w = int(input('몇 개마다 줄바꿈할까요> '))
+
+# for i in range(n):
+#     print('*', end='')
+#     if i % w == w - 1:
+#         print()
+
+# if n % w:
+#     print()
+
+
+
+
+# # *를 n개 출력하되 w개마다 줄바꿈하기 2
+
+# print('*를 출력합니다.')
+# n = int(input('몇 개를 출력할까요> '))
+# w = int(input('몇 개마다 줄바꿈할까요> '))
+
+# for _ in range(n // w):
+#     print('*' * w)
+
+# rest = n % w
+# if rest:
+#     print('*' * rest)
+
+
+
+# # 양수만 입력받는 1부터 n까지 정수의 합 구하기
+
+# print('1부터 n까지 정수의 합을 구합니다.')
+
+# while True:
+#     n = int(input('n값을 입력하세요> '))
+#     if n > 0:
+#         break
+
+# sum = 0
+# i = 1
+
+# for i in range(1, n + 1):
+#     sum += i
+#     i += 1
+
+# print(f'1부터 {n}까지 정수의 합은 {sum}입니다.')
