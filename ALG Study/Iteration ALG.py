@@ -187,3 +187,35 @@
 #     i += 1
 
 # print(f'1부터 {n}까지 정수의 합은 {sum}입니다.')
+
+
+
+
+# # 가로, 세로 길이가 정수이고 넓이가 area인 직사각형에서 변의 길이 나열하기
+
+# area = int(input('직사각형의 넓이를 입력하세요> '))
+
+# for i in range(1, area + 1):
+#     if i * i > area: break
+#     if area % i :continue #area의 약수가 나올때만 통과
+#     print(f'{i} x {area // i}') 
+
+
+
+# # 10~99 사이의 난수 n개 생성하기(13이 나오면 중단)
+
+# import random
+
+# n = int(input('난수의 개수를 입력하세요> '))
+
+# for _ in range(n):
+#     r = random.randint(10, 99)
+#     print(r, end = ' ')
+#     if r == 13:
+#         print('\n프로그램을 중단합니다')
+#         break
+
+# else:
+#     print('\n난수 생성을 종료합니다.')
+
+
