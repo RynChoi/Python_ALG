@@ -219,3 +219,82 @@
 #     print('\n난수 생성을 종료합니다.')
 
 
+
+# # 1~12까지 8을 건너뛰고 출력하기 1
+
+# for i in range(1, 13):
+#     if i == 8:
+#         continue
+#     print(i, end=' ')
+
+# print()
+
+# # 1부터 12까지 8을 건너뛰고 출력하기 2
+
+# for i in list(range(1, 8)) + list(range(9, 13)):
+#     print(i, end=' ')
+# print()
+
+
+# # 2자리 양수 (10 ~ 99)입력받기
+
+# print('2자리 양수를 입력하세요.')
+
+# while True:
+#     no = int(input('값을 입력하세요.: '))
+#     if no >= 10 and no <= 99:
+#         break
+
+# print(f'입력받은 양수는 {no}입니다.')
+
+
+# #구구단 곱셈표 출력하기
+
+# print('-' * 27)
+# for i in range(1, 10):
+#     for j in range(1, 10):
+#         print(f'{i * j:3}', end='')
+#     print()
+# print('-' * 27)
+
+
+# # 왼쪽 아래가 직각인 이등변 삼각형으로 * 출력하기
+
+# print('왼쪽 아래가 직각인 이등변 삼각형을 출력합니다.')
+# n = int(input('짧은 변의 길이를 입력하세요.: '))
+
+# for i in range(n):
+#     for j in range(i + 1):
+#         print('*', end='')
+#     print()
+
+
+# # 오른쪽 아래가 직각인 이등변 삼각형을 * 출력하기
+
+# print('오른쪽 아래가 직각인 이등변 삼각형을 출력합니다.')
+# n = int(input('짧은 변의 길이를 입력하세요.: '))
+
+# for i in range(n):
+#     for _ in range(n - i - 1):
+#         print(' ', end='')
+#     for _ in range(i + 1):
+#         print('*', end='')
+#     print()
+
+
+# # 함수 내부, 외부에서 정의한 변수와 객체의 식별 번호를 출력하기
+
+# n = 1
+# def put_id():
+#     x = 1
+#     print(f'id(x) = {id(x)}')
+
+# print(f'id(1) = {id(1)}')
+# print(f'id(n) = {id(n)}')
+# put_id()
+
+
+# # 1부터 10까지 반복하여 식별번호 출력하기
+
+# for i in range(1, 11):
+#     print(f'i = {i:3}  id(i) = {id(i)}')
